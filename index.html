@@ -59,6 +59,7 @@
           console.log('Caught a "Run Script" click event.');
           $("#output_area").addClass( 'selected');
           alert("The looping function should go here.");
+          loop_and_display();
         });
 
         // attach an event listener to the Clear button here
@@ -88,16 +89,15 @@
     <h2>Quiz</h2>
     <dl>
       <dt>What is an 'event listener'?</dt>
-      <dd>An event listener is when someone comes to your webpage and they click on a link, enter a form, scroll or are moving their mouse over a specific area there is an action that happens called events. You can set specific functions to run when a user to your website performs an event. The function listens for the event then initate the function.</dd>
+      <dd>An event listener is when someone comes to your webpage and they click on a link, enter a form, scroll or are moving their mouse over a specific area there is an action that happens called events. You can set specific functions to run when a user to your website performs an event. The function listens for the event then initates the function.</dd>
       <dt>How do you attach an event listener that responds to a 'click' event to an element using jQuery?</dt>
       <dd> You attach an even listener via JQuery by using the click function. It needs to have the .click (function(). It also needs a handler so that the function can be executed each time the event is triggered.</dd>
       <dt>What is the ID of the place where the output of the loop function should go?</dt>
-      <dd>The id is output_area or paragraph</dd>
+      <dd>The id is #output_area</dd>
       <dt>What is the class that changes the style of the output area?</dt>
-      <dd>the class that changes the style of the output area is idle</dd>
+      <dd>the class is addclass its a string</dd>
       <dt>What does the selector input[value="Run Script"] do? Enter the URLs of the places you researched with your explanation.</dt>
-      <dd>run the entire script with the values and quick inputs.
-		http://deployr.revolutionanalytics.com/documents/help/repo-man/Content/j-script-test-3-inputs.htm </dd>
+      <dd> It is a class that runs the function when the action is prompted. http://deployr.revolutionanalytics.com/documents/help/repo-man/Content/j-script-test-3-inputs.htm </dd>
       <dt>What is the URL of the documentation for the jQuery <kbd>.addClass</kbd> method?</dt>
       <dd>https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js</dd>
       <dt>What is the URL of the documentation for GitHub Pages? What does creating the <kbd>gh-pages</kbd> branch do on github.com</dt>
