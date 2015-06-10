@@ -63,7 +63,12 @@
         });
 
         // attach an event listener to the Clear button here
-
+          $('input[value="Clear"]').click( function(){
+          console.log('Caught a "clear" click event.');
+           $("#output_area").removeClass( 'selected');
+           output_html="<p>Click the Run Script button</p>";
+           $("#output_area").html(output_html);
+        });
       }); // end of $(document).ready
 
       /*
